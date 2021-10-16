@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD7464E426F91BF30055AE14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7464E326F91BF30055AE14 /* AppDelegate.swift */; };
+		BD7464E626F91BF30055AE14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7464E526F91BF30055AE14 /* SceneDelegate.swift */; };
+		BD7464E826F91BF30055AE14 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7464E726F91BF30055AE14 /* MainViewController.swift */; };
+		BD7464EB26F91BF30055AE14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7464E926F91BF30055AE14 /* Main.storyboard */; };
+		BD7464ED26F91BF90055AE14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7464EC26F91BF90055AE14 /* Assets.xcassets */; };
+		BD7464F026F91BF90055AE14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7464EE26F91BF90055AE14 /* LaunchScreen.storyboard */; };
+		BD7464FD26FA44920055AE14 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7464FC26FA44920055AE14 /* Data.swift */; };
+		BD74650326FA4A940055AE14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74650226FA4A940055AE14 /* Model.swift */; };
+		BD74650626FA5B520055AE14 /* TEEResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74650526FA5B520055AE14 /* TEEResultController.swift */; };
+		BD74651026FCF14D0055AE14 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74650F26FCF14D0055AE14 /* Table.swift */; };
+		BD78FBE9271758F3005DFFDD /* CeramicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78FBE8271758F3005DFFDD /* CeramicViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD7464E026F91BF30055AE14 /* ThermoelectricModuleCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThermoelectricModuleCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7464E326F91BF30055AE14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD7464E526F91BF30055AE14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD7464E726F91BF30055AE14 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BD7464EA26F91BF30055AE14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD7464EC26F91BF90055AE14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD7464EF26F91BF90055AE14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD7464F126F91BF90055AE14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7464FC26FA44920055AE14 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BD74650226FA4A940055AE14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BD74650526FA5B520055AE14 /* TEEResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEEResultController.swift; sourceTree = "<group>"; };
+		BD74650926FB715E0055AE14 /* Drawing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Drawing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BD74650B26FBA8790055AE14 /* Sample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BD74650F26FCF14D0055AE14 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		BD78FBE8271758F3005DFFDD /* CeramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeramicViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD7464DD26F91BF30055AE14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD7464D726F91BF30055AE14 = {
+			isa = PBXGroup;
+			children = (
+				BD74650D26FCEEC50055AE14 /* View */,
+				BD74650B26FBA8790055AE14 /* Sample.playground */,
+				BD74650926FB715E0055AE14 /* Drawing.playground */,
+				BD7464FB26FA44790055AE14 /* Model */,
+				BD7464E226F91BF30055AE14 /* ThermoelectricModuleCalculator */,
+				BD7464E126F91BF30055AE14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD7464E126F91BF30055AE14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD7464E026F91BF30055AE14 /* ThermoelectricModuleCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD7464E226F91BF30055AE14 /* ThermoelectricModuleCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				BD7464E326F91BF30055AE14 /* AppDelegate.swift */,
+				BD7464E526F91BF30055AE14 /* SceneDelegate.swift */,
+				BD7464E726F91BF30055AE14 /* MainViewController.swift */,
+				BD74650526FA5B520055AE14 /* TEEResultController.swift */,
+				BD7464EC26F91BF90055AE14 /* Assets.xcassets */,
+				BD7464F126F91BF90055AE14 /* Info.plist */,
+				BD78FBE8271758F3005DFFDD /* CeramicViewController.swift */,
+			);
+			path = ThermoelectricModuleCalculator;
+			sourceTree = "<group>";
+		};
+		BD7464FB26FA44790055AE14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD7464FC26FA44920055AE14 /* Data.swift */,
+				BD74650226FA4A940055AE14 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD74650D26FCEEC50055AE14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD74650E26FCEED50055AE14 /* Storyboard */,
+				BD74650F26FCF14D0055AE14 /* Table.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD74650E26FCEED50055AE14 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BD7464EE26F91BF90055AE14 /* LaunchScreen.storyboard */,
+				BD7464E926F91BF30055AE14 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD7464DF26F91BF30055AE14 /* ThermoelectricModuleCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7464F426F91BF90055AE14 /* Build configuration list for PBXNativeTarget "ThermoelectricModuleCalculator" */;
+			buildPhases = (
+				BD7464DC26F91BF30055AE14 /* Sources */,
+				BD7464DD26F91BF30055AE14 /* Frameworks */,
+				BD7464DE26F91BF30055AE14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThermoelectricModuleCalculator;
+			productName = ThermoelectricModuleCalculator;
+			productReference = BD7464E026F91BF30055AE14 /* ThermoelectricModuleCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD7464D826F91BF30055AE14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BD7464DF26F91BF30055AE14 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BD7464DB26F91BF30055AE14 /* Build configuration list for PBXProject "ThermoelectricModuleCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD7464D726F91BF30055AE14;
+			productRefGroup = BD7464E126F91BF30055AE14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD7464DF26F91BF30055AE14 /* ThermoelectricModuleCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD7464DE26F91BF30055AE14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7464F026F91BF90055AE14 /* LaunchScreen.storyboard in Resources */,
+				BD7464ED26F91BF90055AE14 /* Assets.xcassets in Resources */,
+				BD7464EB26F91BF30055AE14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD7464DC26F91BF30055AE14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD74650326FA4A940055AE14 /* Model.swift in Sources */,
+				BD78FBE9271758F3005DFFDD /* CeramicViewController.swift in Sources */,
+				BD74651026FCF14D0055AE14 /* Table.swift in Sources */,
+				BD74650626FA5B520055AE14 /* TEEResultController.swift in Sources */,
+				BD7464E826F91BF30055AE14 /* MainViewController.swift in Sources */,
+				BD7464E426F91BF30055AE14 /* AppDelegate.swift in Sources */,
+				BD7464E626F91BF30055AE14 /* SceneDelegate.swift in Sources */,
+				BD7464FD26FA44920055AE14 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD7464E926F91BF30055AE14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7464EA26F91BF30055AE14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD7464EE26F91BF90055AE14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7464EF26F91BF90055AE14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD7464F226F91BF90055AE14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD7464F326F91BF90055AE14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD7464F526F91BF90055AE14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4RP4JXLV;
+				INFOPLIST_FILE = ThermoelectricModuleCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nerzul88.ThermoelectricModuleCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD7464F626F91BF90055AE14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4RP4JXLV;
+				INFOPLIST_FILE = ThermoelectricModuleCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nerzul88.ThermoelectricModuleCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD7464DB26F91BF30055AE14 /* Build configuration list for PBXProject "ThermoelectricModuleCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7464F226F91BF90055AE14 /* Debug */,
+				BD7464F326F91BF90055AE14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7464F426F91BF90055AE14 /* Build configuration list for PBXNativeTarget "ThermoelectricModuleCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7464F526F91BF90055AE14 /* Debug */,
+				BD7464F626F91BF90055AE14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD7464D826F91BF30055AE14 /* Project object */;
+}

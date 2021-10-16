@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ThermoelectricModuleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="127" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yvi-Zz-GvK">
+                                <rect key="frame" x="30" y="145" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5VQ-Tv-oZX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww3-an-k34">
+                                <rect key="frame" x="30" y="220" width="100" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.6" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-aA-2Ay">
+                                <rect key="frame" x="30" y="295" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1MR-2c-alN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Число пар ТЭЭ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WK-UW-jjs">
+                                <rect key="frame" x="30" y="114" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="khE-NG-4aa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сечение ТЭЭ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mae-7c-H8V">
+                                <rect key="frame" x="30" y="189" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ErV-vz-dbT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теплопроводность, В/м*К" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agG-JE-6Wg">
+                                <rect key="frame" x="174" y="727" width="210" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="tsO-eb-gut"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM5-tz-iyq">
+                                <rect key="frame" x="40" y="433" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Рассчитать">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="temCalculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVH-u5-0gD"/>
+                                    <segue destination="fL1-Z0-k3i" kind="presentation" identifier="showTEECalcResults" id="FKp-1r-1Mv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="25" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TX3-lT-pFe">
+                                <rect key="frame" x="284" y="758" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HFv-HA-cWQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.89" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-mB-iWc">
+                                <rect key="frame" x="284" y="683" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="93O-oA-0Pf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="40" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78M-tP-SAX">
+                                <rect key="frame" x="284" y="533" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wCc-ps-QmY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="40" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erp-3T-SRV">
+                                <rect key="frame" x="284" y="608" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zm5-Uv-uvl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Толщина керамики, мм" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx8-bs-HtU">
+                                <rect key="frame" x="174" y="652" width="210" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Qnz-hV-yk1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ширина керамики, мм" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-Oj-Ta4">
+                                <rect key="frame" x="174" y="577" width="210" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="ppX-uR-9hm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fND-1Q-Zwq">
+                                <rect key="frame" x="292" y="433" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Рассчитать">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ceramicCalculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Xn-TD-U9p"/>
+                                    <segue destination="QoD-ZB-oL7" kind="presentation" identifier="showCeramicCalcResults" id="rm0-xx-ScM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Высота ТЭЭ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDF-Fw-qxW">
+                                <rect key="frame" x="30" y="264" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="mjL-bB-imR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длина керамики, мм" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2r-o5-wLj">
+                                <rect key="frame" x="174" y="502" width="210" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="298-gI-IQA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="trailing" secondItem="wd8-mB-iWc" secondAttribute="trailing" id="7Z1-jY-Ylc"/>
+                            <constraint firstItem="kx8-bs-HtU" firstAttribute="top" secondItem="erp-3T-SRV" secondAttribute="bottom" constant="10" id="8dk-Mm-4f5"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="trailing" secondItem="TX3-lT-pFe" secondAttribute="trailing" id="9OI-N5-TCJ"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="leading" secondItem="ww3-an-k34" secondAttribute="leading" id="CHP-Kc-AMs"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DOn-ZT-tgj"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="leading" secondItem="kx8-bs-HtU" secondAttribute="leading" id="KyH-B8-8Nr"/>
+                            <constraint firstItem="yvi-Zz-GvK" firstAttribute="top" secondItem="1WK-UW-jjs" secondAttribute="bottom" constant="10" id="U7l-wo-7Vh"/>
+                            <constraint firstItem="78M-tP-SAX" firstAttribute="top" secondItem="w2r-o5-wLj" secondAttribute="bottom" constant="10" id="VU7-ME-7bg"/>
+                            <constraint firstItem="TX3-lT-pFe" firstAttribute="top" secondItem="agG-JE-6Wg" secondAttribute="bottom" constant="10" id="WXk-Mz-SLi"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="leading" secondItem="w2r-o5-wLj" secondAttribute="leading" id="aec-BR-UUq"/>
+                            <constraint firstItem="kHG-aA-2Ay" firstAttribute="top" secondItem="WDF-Fw-qxW" secondAttribute="bottom" constant="10" id="b4z-4L-gbe"/>
+                            <constraint firstAttribute="bottom" secondItem="agG-JE-6Wg" secondAttribute="bottom" constant="148" id="bNX-pY-WMd"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="leading" secondItem="bbf-Oj-Ta4" secondAttribute="leading" id="ewU-vA-6ys"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="top" secondItem="wd8-mB-iWc" secondAttribute="bottom" constant="10" id="gQl-Pk-E9u"/>
+                            <constraint firstItem="erp-3T-SRV" firstAttribute="top" secondItem="bbf-Oj-Ta4" secondAttribute="bottom" constant="10" id="hFD-XF-8IU"/>
+                            <constraint firstItem="mae-7c-H8V" firstAttribute="top" secondItem="yvi-Zz-GvK" secondAttribute="bottom" constant="10" id="jKG-Wi-cbB"/>
+                            <constraint firstItem="1WK-UW-jjs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="jyU-1w-e8k"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="leading" secondItem="kHG-aA-2Ay" secondAttribute="leading" id="krZ-Nq-8pP"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="mF7-tk-OvB"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="leading" secondItem="yvi-Zz-GvK" secondAttribute="leading" id="nq2-f4-5NC"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="top" secondItem="ww3-an-k34" secondAttribute="bottom" constant="10" id="qJG-UZ-GHX"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="leading" secondItem="mae-7c-H8V" secondAttribute="leading" id="tyG-hR-JdE"/>
+                            <constraint firstAttribute="bottom" secondItem="erp-3T-SRV" secondAttribute="bottom" constant="254" id="u2L-h6-cNx"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="leading" secondItem="1WK-UW-jjs" secondAttribute="leading" id="uif-hg-uX6"/>
+                            <constraint firstItem="WDF-Fw-qxW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="264" id="wfr-Xr-7Ei"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="trailing" secondItem="erp-3T-SRV" secondAttribute="trailing" id="xix-lQ-0SC"/>
+                            <constraint firstItem="agG-JE-6Wg" firstAttribute="trailing" secondItem="78M-tP-SAX" secondAttribute="trailing" id="yiV-zO-49W"/>
+                            <constraint firstItem="bbf-Oj-Ta4" firstAttribute="top" secondItem="78M-tP-SAX" secondAttribute="bottom" constant="10" id="zdO-wk-f0m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="52L-tK-zEf"/>
+                    <connections>
+                        <outlet property="calculateButton" destination="GM5-tz-iyq" id="zXY-CH-tT0"/>
+                        <outlet property="ceramicCalculateButton" destination="fND-1Q-Zwq" id="VKh-F5-E2B"/>
+                        <outlet property="ceramicLengthValue" destination="78M-tP-SAX" id="Oqv-TF-48w"/>
+                        <outlet property="ceramicThermalCondValue" destination="TX3-lT-pFe" id="CeT-wv-Win"/>
+                        <outlet property="ceramicThicknessValue" destination="wd8-mB-iWc" id="oSY-nC-itK"/>
+                        <outlet property="ceramicWidthValue" destination="erp-3T-SRV" id="9qG-oA-ciD"/>
+                        <outlet property="heatCondLabel" destination="agG-JE-6Wg" id="rli-Ug-hJH"/>
+                        <outlet property="teeCountValue" destination="yvi-Zz-GvK" id="C7h-IU-ZRK"/>
+                        <outlet property="teeCrossValue" destination="ww3-an-k34" id="NcO-qn-PoQ"/>
+                        <outlet property="teeHeightValue" destination="kHG-aA-2Ay" id="DN4-rj-0HJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="93.75"/>
+        </scene>
+        <!--Ceramic View Controller-->
+        <scene sceneID="xmc-TV-17i">
+            <objects>
+                <viewController id="QoD-ZB-oL7" customClass="CeramicViewController" customModule="ThermoelectricModuleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Kk-ZB-exp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tax-Ra-mf8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7C-ip-fWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="484"/>
+        </scene>
+        <!--Result Controller-->
+        <scene sceneID="mHN-5J-1Q7">
+            <objects>
+                <viewController id="fL1-Z0-k3i" customClass="TEEResultController" customModule="ThermoelectricModuleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZW1-Re-3kk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bSb-l9-GXX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCT-4f-pec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="-279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
