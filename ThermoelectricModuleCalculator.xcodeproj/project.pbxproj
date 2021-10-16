@@ -32,8 +32,6 @@
 		BD7464FC26FA44920055AE14 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		BD74650226FA4A940055AE14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BD74650526FA5B520055AE14 /* TEEResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEEResultController.swift; sourceTree = "<group>"; };
-		BD74650926FB715E0055AE14 /* Drawing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Drawing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BD74650B26FBA8790055AE14 /* Sample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BD74650F26FCF14D0055AE14 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		BD78FBE8271758F3005DFFDD /* CeramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeramicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				BD74650D26FCEEC50055AE14 /* View */,
-				BD74650B26FBA8790055AE14 /* Sample.playground */,
-				BD74650926FB715E0055AE14 /* Drawing.playground */,
 				BD7464FB26FA44790055AE14 /* Model */,
 				BD7464E226F91BF30055AE14 /* ThermoelectricModuleCalculator */,
 				BD7464E126F91BF30055AE14 /* Products */,
