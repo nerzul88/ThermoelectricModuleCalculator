@@ -49,9 +49,22 @@ class MainViewController: UIViewController {
     }    
     
     //круглая кнопка
-    func circleButton(button: UIButton, imagePath: String?, x: Int, y: Int) -> UIButton {
+//    func circleButton(button: UIButton, imagePath: String?, x: Int, y: Int) -> UIButton {
+//        let circleButton = button
+//        //circleButton.frame = CGRect(x: x, y: y, width: 100, height: 100)
+//        circleButton.layer.cornerRadius = 0.5 * circleButton.bounds.size.width
+//        circleButton.layer.borderWidth = 0.7
+//        circleButton.layer.borderColor = (UIColor.black.withAlphaComponent(0.7)).cgColor
+//        circleButton.clipsToBounds = true
+//        circleButton.backgroundColor = .white
+//        let image = UIImage(named: imagePath ?? "")
+//        //circleButton.setImage(image, for: .normal)
+//        circleButton.setBackgroundImage(image, for: .normal)
+//        return button
+//    }
+    func circleButton(button: UIButton, imagePath: String?) -> UIButton {
         let circleButton = button
-        circleButton.frame = CGRect(x: x, y: y, width: 100, height: 100)
+        //circleButton.frame = CGRect(x: x, y: y, width: 100, height: 100)
         circleButton.layer.cornerRadius = 0.5 * circleButton.bounds.size.width
         circleButton.layer.borderWidth = 0.7
         circleButton.layer.borderColor = (UIColor.black.withAlphaComponent(0.7)).cgColor
@@ -109,8 +122,10 @@ class MainViewController: UIViewController {
         
         heatCondLabel.text = "Теплопроводность Вт/м\u{00B7}К"
         //круглые кнопки
-        view.addSubview(circleButton(button: calculateButton, imagePath: "RedScreen", x: Int(view.frame.size.width / 8), y: Int(view.frame.size.height / 2.3)))
-        view.addSubview(circleButton(button: ceramicCalculateButton, imagePath: "BlueScreen", x: Int(view.frame.size.width) - (Int(view.frame.size.width / 2.9)), y: Int(view.frame.size.height / 2.3)))
+//        view.addSubview(circleButton(button: calculateButton, imagePath: "RedScreen", x: Int(view.frame.size.width / 8), y: Int(view.frame.size.height / 2.3)))
+//        view.addSubview(circleButton(button: ceramicCalculateButton, imagePath: "BlueScreen", x: Int(view.frame.size.width) - (Int(view.frame.size.width / 2.9)), y: Int(view.frame.size.height / 2.3)))
+        view.addSubview(circleButton(button: calculateButton, imagePath: "RedScreen"))
+        view.addSubview(circleButton(button: ceramicCalculateButton, imagePath: "BlueScreen"))
         
         //скрываем клавиатуру
         self.hideKeyboardWhenTappedAround()
